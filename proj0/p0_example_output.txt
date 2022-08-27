@@ -1,0 +1,513 @@
+MEMORY LOAD : 9175959
+NO. 1 PC 0x00007f232549a13a "mov    eax, <rel> dword ptr [0x00007f232549d014]"
+=>EXECUTION TIMES
+2000000
+=>BACKTRACE
+#0   0x00007f232549a13a in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:5]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 2 PC 0x00007f232549a149 "add    dword ptr [rbp-0x04], 0x01"
+=>EXECUTION TIMES
+2000000
+=>BACKTRACE
+#0   0x00007f232549a149 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 3 PC 0x00007f232549a14d "cmp    dword ptr [rbp-0x04], 0x63"
+=>EXECUTION TIMES
+2000000
+=>BACKTRACE
+#0   0x00007f232549a14d in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 4 PC 0x00007f232549a149 "add    dword ptr [rbp-0x04], 0x01"
+=>EXECUTION TIMES
+1000000
+=>BACKTRACE
+#0   0x00007f232549a149 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 5 PC 0x00007f232549a14d "cmp    dword ptr [rbp-0x04], 0x63"
+=>EXECUTION TIMES
+1000000
+=>BACKTRACE
+#0   0x00007f232549a14d in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 6 PC 0x00007f232549a13a "mov    eax, <rel> dword ptr [0x00007f232549d014]"
+=>EXECUTION TIMES
+1000000
+=>BACKTRACE
+#0   0x00007f232549a13a in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:5]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 7 PC 0x00007f232549a14d "cmp    dword ptr [rbp-0x04], 0x63"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a14d in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 8 PC 0x00007f232549a154 "pop    rbp"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a154 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:8]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 9 PC 0x00007f232549a155 "ret"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a155 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:8]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 10 PC 0x00007f232549a1af "add    dword ptr [rbp-0x04], 0x01"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a1af in main at [/home/czhong4/512/drcctprof_clients/p0test.c:16]
+#1   0x00007f20d2aed081 in __libc_start_main at [:0]
+#2   0x00007f232549a068 in _start at [:0]
+#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#4   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+MEMORY STORE : 6130202
+NO. 1 PC 0x00007f232549a143 "mov    <rel> dword ptr [0x00007f232549d014], eax"
+=>EXECUTION TIMES
+2000000
+=>BACKTRACE
+#0   0x00007f232549a143 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:5]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 2 PC 0x00007f232549a149 "add    dword ptr [rbp-0x04], 0x01"
+=>EXECUTION TIMES
+2000000
+=>BACKTRACE
+#0   0x00007f232549a149 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 3 PC 0x00007f232549a143 "mov    <rel> dword ptr [0x00007f232549d014], eax"
+=>EXECUTION TIMES
+1000000
+=>BACKTRACE
+#0   0x00007f232549a143 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:5]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 4 PC 0x00007f232549a149 "add    dword ptr [rbp-0x04], 0x01"
+=>EXECUTION TIMES
+1000000
+=>BACKTRACE
+#0   0x00007f232549a149 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 5 PC 0x00007f232549a131 "mov    dword ptr [rbp-0x04], 0x00000000"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a131 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 6 PC 0x00007f232549a1aa "call   0x00007f232549a129"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#1   0x00007f20d2aed081 in __libc_start_main at [:0]
+#2   0x00007f232549a068 in _start at [:0]
+#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#4   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 7 PC 0x00007f232549a12d "push   rbp"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a12d in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:3]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 8 PC 0x00007f232549a1af "add    dword ptr [rbp-0x04], 0x01"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a1af in main at [/home/czhong4/512/drcctprof_clients/p0test.c:16]
+#1   0x00007f20d2aed081 in __libc_start_main at [:0]
+#2   0x00007f232549a068 in _start at [:0]
+#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#4   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 9 PC 0x00007f232549a12d "push   rbp"
+=>EXECUTION TIMES
+10000
+=>BACKTRACE
+#0   0x00007f232549a12d in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:3]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 10 PC 0x00007f232549a170 "call   0x00007f232549a129"
+=>EXECUTION TIMES
+10000
+=>BACKTRACE
+#0   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#1   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+CONDITIONAL BRANCHES : 3079815
+NO. 1 PC 0x00007f232549a151 "jle    0x00007f232549a13a"
+=>EXECUTION TIMES
+2000000
+=>BACKTRACE
+#0   0x00007f232549a151 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 2 PC 0x00007f232549a151 "jle    0x00007f232549a13a"
+=>EXECUTION TIMES
+1000000
+=>BACKTRACE
+#0   0x00007f232549a151 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 3 PC 0x00007f232549a151 "jle    0x00007f232549a13a"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a151 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 4 PC 0x00007f232549a1ba "jle    0x00007f232549a1a5"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a1ba in main at [/home/czhong4/512/drcctprof_clients/p0test.c:16]
+#1   0x00007f20d2aed081 in __libc_start_main at [:0]
+#2   0x00007f232549a068 in _start at [:0]
+#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#4   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 5 PC 0x00007f232549a151 "jle    0x00007f232549a13a"
+=>EXECUTION TIMES
+10000
+=>BACKTRACE
+#0   0x00007f232549a151 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 6 PC 0x00007f232549a180 "jle    0x00007f232549a16b"
+=>EXECUTION TIMES
+10000
+=>BACKTRACE
+#0   0x00007f232549a180 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:10]
+#1   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 7 PC 0x00007f232947c303 "jnz    0x00007f232947d3ee"
+=>EXECUTION TIMES
+1214
+=>BACKTRACE
+#0   0x00007f232947c303 in _dl_relocate_object at [:0]
+#1   0x00007f2329472535 in dl_main at [:0]
+#2   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#3   0x00007f2329470047 in _dl_start at [:0]
+#4   0x00007f232946f103 in <MISSING> at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 8 PC 0x00007f232947c31a "jnbe   0x00007f232947c2f0"
+=>EXECUTION TIMES
+1214
+=>BACKTRACE
+#0   0x00007f232947c31a in _dl_relocate_object at [:0]
+#1   0x00007f2329472535 in dl_main at [:0]
+#2   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#3   0x00007f2329470047 in _dl_start at [:0]
+#4   0x00007f232946f103 in <MISSING> at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 9 PC 0x00007f232947c2fd "jz     0x00007f232947c309"
+=>EXECUTION TIMES
+1212
+=>BACKTRACE
+#0   0x00007f232947c2fd in _dl_relocate_object at [:0]
+#1   0x00007f2329472535 in dl_main at [:0]
+#2   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#3   0x00007f2329470047 in _dl_start at [:0]
+#4   0x00007f232946f103 in <MISSING> at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 10 PC 0x00007f232947a131 "jnz    0x00007f232947a118"
+=>EXECUTION TIMES
+1011
+=>BACKTRACE
+#0   0x00007f232947a131 in _dl_lookup_symbol_x at [:0]
+#1   0x00007f232947bf1f in _dl_relocate_object at [:0]
+#2   0x00007f2329472535 in dl_main at [:0]
+#3   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#4   0x00007f2329470047 in _dl_start at [:0]
+#5   0x00007f232946f103 in <MISSING> at [:0]
+#6   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+UNCONDITIONAL BRANCHES : 30756
+NO. 1 PC 0x00007f232549a138 "jmp    0x00007f232549a14d"
+=>EXECUTION TIMES
+20000
+=>BACKTRACE
+#0   0x00007f232549a138 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a1aa in main at [/home/czhong4/512/drcctprof_clients/p0test.c:17]
+#2   0x00007f20d2aed081 in __libc_start_main at [:0]
+#3   0x00007f232549a068 in _start at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 2 PC 0x00007f232549a138 "jmp    0x00007f232549a14d"
+=>EXECUTION TIMES
+10000
+=>BACKTRACE
+#0   0x00007f232549a138 in sub_fun at [/home/czhong4/512/drcctprof_clients/p0test.c:4]
+#1   0x00007f232549a170 in fun at [/home/czhong4/512/drcctprof_clients/p0test.c:11]
+#2   0x00007f232549a197 in main at [/home/czhong4/512/drcctprof_clients/p0test.c:15]
+#3   0x00007f20d2aed081 in __libc_start_main at [:0]
+#4   0x00007f232549a068 in _start at [:0]
+#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 3 PC 0x00007f2329479524 "jmp    0x00007f23294795bf"
+=>EXECUTION TIMES
+75
+=>BACKTRACE
+#0   0x00007f2329479524 in do_lookup_x at [:0]
+#1   0x00007f232947a1ec in _dl_lookup_symbol_x at [:0]
+#2   0x00007f232947bf1f in _dl_relocate_object at [:0]
+#3   0x00007f2329472535 in dl_main at [:0]
+#4   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#5   0x00007f2329470047 in _dl_start at [:0]
+#6   0x00007f232946f103 in <MISSING> at [:0]
+#7   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 4 PC 0x00007f232947a1a5 "jmp    0x00007f232947a1c3"
+=>EXECUTION TIMES
+75
+=>BACKTRACE
+#0   0x00007f232947a1a5 in _dl_lookup_symbol_x at [:0]
+#1   0x00007f232947bf1f in _dl_relocate_object at [:0]
+#2   0x00007f2329472535 in dl_main at [:0]
+#3   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#4   0x00007f2329470047 in _dl_start at [:0]
+#5   0x00007f232946f103 in <MISSING> at [:0]
+#6   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#7   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 5 PC 0x00007f2329479819 "jmp    0x00007f232947982d"
+=>EXECUTION TIMES
+71
+=>BACKTRACE
+#0   0x00007f2329479819 in do_lookup_x at [:0]
+#1   0x00007f232947a1ec in _dl_lookup_symbol_x at [:0]
+#2   0x00007f232947bf1f in _dl_relocate_object at [:0]
+#3   0x00007f2329472535 in dl_main at [:0]
+#4   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#5   0x00007f2329470047 in _dl_start at [:0]
+#6   0x00007f232946f103 in <MISSING> at [:0]
+#7   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 6 PC 0x00007f2329479ff6 "jmp    0x00007f2329479748"
+=>EXECUTION TIMES
+69
+=>BACKTRACE
+#0   0x00007f2329479ff6 in do_lookup_x at [:0]
+#1   0x00007f232947a1ec in _dl_lookup_symbol_x at [:0]
+#2   0x00007f232947bf1f in _dl_relocate_object at [:0]
+#3   0x00007f2329472535 in dl_main at [:0]
+#4   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#5   0x00007f2329470047 in _dl_start at [:0]
+#6   0x00007f232946f103 in <MISSING> at [:0]
+#7   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 7 PC 0x00007f23294797a6 "jmp    0x00007f23294798a2"
+=>EXECUTION TIMES
+69
+=>BACKTRACE
+#0   0x00007f23294797a6 in do_lookup_x at [:0]
+#1   0x00007f232947a1ec in _dl_lookup_symbol_x at [:0]
+#2   0x00007f232947bf1f in _dl_relocate_object at [:0]
+#3   0x00007f2329472535 in dl_main at [:0]
+#4   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#5   0x00007f2329470047 in _dl_start at [:0]
+#6   0x00007f232946f103 in <MISSING> at [:0]
+#7   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#8   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 8 PC 0x00007f23294880f4 "jmp    0x00007f232948811b"
+=>EXECUTION TIMES
+38
+=>BACKTRACE
+#0   0x00007f23294880f4 in __GI___tunables_init at [:0]
+#1   0x00007f232948aa96 in _dl_sysdep_start at [:0]
+#2   0x00007f2329470047 in _dl_start at [:0]
+#3   0x00007f232946f103 in <MISSING> at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 9 PC 0x00007f232948a4fe "jmp    0x00007f232948a4d3"
+=>EXECUTION TIMES
+25
+=>BACKTRACE
+#0   0x00007f232948a4fe in get_common_indices.constprop.0 at [:0]
+#1   0x00007f232948aebf in _dl_sysdep_start at [:0]
+#2   0x00007f2329470047 in _dl_start at [:0]
+#3   0x00007f232946f103 in <MISSING> at [:0]
+#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#5   0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
+NO. 10 PC 0x00007f2329475755 "jmp    0x00007f232947573e"
+=>EXECUTION TIMES
+19
+=>BACKTRACE
+#0   0x00007f2329475755 in _dl_map_object_from_fd at [:0]
+#1   0x00007f2329478616 in _dl_map_object at [:0]
+#2   0x00007f232947d510 in openaux at [:0]
+#3   0x00007f232948bcb8 in _dl_catch_exception at [:0]
+#4   0x00007f232947d95e in _dl_map_object_deps at [:0]
+#5   0x00007f232947205f in dl_main at [:0]
+#6   0x00007f232948ac49 in _dl_sysdep_start at [:0]
+#7   0x00007f2329470047 in _dl_start at [:0]
+#8   0x00007f232946f103 in <MISSING> at [:0]
+#9   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
+#10  0x0000000000000000 in PROCESS[3663302]_ROOT_CTXT at [<NULL>:0]
+
+
