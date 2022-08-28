@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install DrCCTProf
       run: |
-        git clone --recurse git@github.com:Xuhpclab/DrCCTProf.git
+        git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
         ./build.sh
         export drrun=~/DrCCTProf/build/bin64/drrun
     - name: Run proj0
