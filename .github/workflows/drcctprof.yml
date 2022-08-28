@@ -2,7 +2,7 @@ name: DrCCTProf
 
 on:
   pull_request:
-    branches: [ opened, synchronize, reopened ]
+    branches: [ main, opened, synchronize, reopened ]
   push:
     branches: [ main ]
   
@@ -16,7 +16,7 @@ jobs:
     - name: Install DrCCTProf
       run: |
         git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
-        ./build.sh
+        ./DrCCTProf/build.sh
         export drrun=~/DrCCTProf/build/bin64/drrun
     - name: Run proj0
       run: | 
