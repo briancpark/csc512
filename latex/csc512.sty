@@ -1,0 +1,307 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  _______  _______  __  _______   ______
+% |       ||       ||  ||       | |      |
+% |       ||  _____||  ||____   | |   |  |
+% |       || |_____ |  |    |   | |   |  |
+% |      _||_____  ||  |    |   | |   |  |
+% |     |_  _____| ||  |    |   | |      |
+% |_______||_______||__|    |___| |______|
+%
+% Header and Style File for CS170 TeX Files
+%
+% This package contains references to other packages, new commands, and values
+% for different parameters, common to all documents.
+% This file should be placed one level above the TeX files in the directory
+% tree.
+%
+% Please modify the appropriate section below with information about
+% the class: this information needs to be updated only once per semester.
+%
+% Compiled by Aditya Baradwaj (abaradwaj@berkeley.edu),
+% with significant inspiration taken from CS 70's header.sty file,
+% which was compiled and cleaned by Alvin Wan (http://alvinwan.com)
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\ProvidesPackage{csc512}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Course Information
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% MODIFY THIS INFORMATION AS NECESSARY
+
+\def\coursenumber{CSC 512}
+\def\class{Compiler Construction}
+\def\semester{Fall 2022}
+\def\instructor{Xu Liu}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Packages Needed
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsfonts}
+%\usepackage{amsthm}
+\usepackage{bbm}
+\usepackage{cancel}
+\usepackage{caption}
+\usepackage{circuitikz}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{enumerate}
+%\usepackage{epsf}
+%\usepackage{fancyhdr}
+%\usepackage{forest}
+%\usepackage{float}
+%\usepackage{graphicx}
+%\usepackage{hyperref}
+%\usepackage{import}
+%\usepackage{latexsym}
+%\usepackage{listings}
+\usepackage{pdfpages}
+%\usepackage{mathtools}
+%\usepackage{paralist}
+\usepackage{listings}
+\usepackage{tabu}
+\usepackage{textcomp}
+%\usepackage{tikz}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{changepage}
+\usetikzlibrary{automata, arrows, positioning, shapes}
+
+% Added while refactoring for 170:
+%\usepackage[noend,noline]{algorithm2e}
+\usepackage{algpseudocode}
+\usepackage{multicol}
+
+\usepackage{amsmath,amssymb,amsthm,graphicx,setspace,tabto,fancyhdr,sectsty,mathtools,pgfplots}
+\usepackage{float,tikz}
+\usepackage[shortlabels]{enumitem}
+\usepackage[nobreak=false]{mdframed}
+\usepackage[left=0.75in,right=0.75in,top=1.0in,bottom=2.0in]{geometry}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\newcommand*{\Question}[1]{\section{#1}}
+\newenvironment{Parts}{\begin{enumerate}[label=(\alph*)]}{\end{enumerate}}
+\newcommand*{\Part}{\item}
+
+% start pdfinlimg (GPLv3, https://github.com/zerotoc/pdfinlimg/blob/master/pdfinlimg.sty)
+\newcommand{\pdfinlimg}[5]{
+\makebox[#1cm][l]{\immediate\pdfliteral{
+  q
+  #3 0 0 #4 0 0 cm
+  #1 0 0 #2 0 0 cm
+  0.885 0 0 0.885 0 0 cm 
+  BI
+  /W #3
+  /H #4
+  /CS /RGB
+  /BPC 8
+  /F [ /AHx /Fl ]
+  ID
+  #5>
+  EI
+  Q
+}\vbox to #2cm{}}
+}
+% end pdfinlimg
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% UNCOMMENT NEXT LINE FOR SOLUTION BOXESactivity
+\newcommand*{\solnboxes}{}
+\ifdefined\solnboxes
+    \newenvironment{Answer}{\vspace{10pt}\begin{mdframed}}{\end{mdframed}\vfill\pagebreak[3]}
+\else
+    \newenvironment{Answer}{\vspace{10pt}}{\vfill\pagebreak[3]}
+\fi
+
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+\DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
+
+\pagestyle{fancy}
+\headheight=75pt
+\sectionfont{\Large\fontfamily{lmdh}\selectfont}
+
+\renewcommand{\headrulewidth}{6pt}
+\chead{\rule{\textwidth}{6pt} \vspace{20pt}\\}
+\lhead{\setstretch{1.05}\Large\fontfamily{lmdh}\selectfont
+\coursenum    \tabto{96pt}  \coursename
+\\ \term \tabto{96pt}   \instr}
+\rhead{\LARGE   \fontfamily{lmdh}\selectfont	Lab \hwnum}
+
+\lfoot{\small \coursenum, \term, Lab \hwnum}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Header and Title
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Other
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Commands for questions, parts, and solutions
+\newcommand{\question}[1]{\section{#1}}
+\newenvironment{subparts}{\begin{enumerate}[(a)]
+\newcommand\subpart{\item}}{\end{enumerate}}
+\newenvironment{solution}{\color{blue} \smallskip \textbf{Solution:}}{}
+
+
+% Other math commands
+
+%%%%%% bold font in math mode; this sucks but is simplest for now
+\newcommand{\mbf}[1]{\mbox{{\bfseries #1}}}
+\newcommand{\smbf}[1]{\mbox{{\scriptsize\bfseries #1}}}
+
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\msf}[1]{\mathsf{#1}}
+
+\def\C{\mathbb{C}}
+\def\N{\mathbb{N}}
+\def\R{\mathbb{R}}
+\def\X{\mbf{X}}
+\def\x{\mbf{x}}
+\def\sx{\smbf{x}}
+\def\Y{\mbf{Y}}
+\def\y{\mbf{y}}
+\def\sy{\smbf{y}}
+\def\e{\mathrm{e}}
+\def\T{\mbf{T}}
+\def\O{\textrm{O}}  % repeated below because it gets redefined by some package?
+\def\Q{\mathbb{Q}}
+\def\se{\smbf{e}}
+\def\Z{\mathbb{Z}}
+\def\z{\mbf{z}}
+\def\sz{\smbf{z}}
+\def\F{\mathbb{F}}
+\def\f{\mbf{f}}
+\def\A{\mbf{A}}
+\def\B{\mbf{B}}
+\def\b{\mbf{b}}
+% Used in, e.g. \int_0^1 x \, \D x.
+\def\D{\mathrm{d}}
+\def\m{\mbf{m}}
+\def\I{\mbf{I}}
+\def\ones{\mbf{1}}
+\def\ev{\mbf{ev}}
+\def\fv{\mbf{ev}}
+\def\sv{\mbf{sv}}
+\def\e{\mathop{\mathrm{e}}\nolimits}  % for e = 2.718...
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Additional commands
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand*{\True}{\textsc{True}}
+\newcommand*{\False}{\textsc{False}}
+\newenvironment{Subparagraph}[0]{\begin{adjustwidth}{1.5em}{0pt}}{\end{adjustwidth}}
+% Feel free to add commands here
+
+\def\defeq{\mathrel{\mathop:}=}
+
+
+%%%%%%%%%%%%%%%%
+   %Coding Environment
+%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\lstdefinestyle{customc}{
+  belowcaptionskip=1\baselineskip,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  %language=Python,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}
+
+\usepackage{xcolor}
+
+\lstset{style=customc}
+%escapechar=@, left out because it conflicts with numpy's @ operator
+
+
+
+% RISC-V Assembler syntax and style for latex lstlisting package
+% 
+% These are risc-v commands as per our university (University Augsburg, Germany) guidelines.
+%
+% Author: Anton Lydike
+%
+% This code is in the public domain and free of licensing
+
+% language definition
+\lstdefinelanguage[RISC-V]{Assembler}
+{
+  alsoletter={.}, % allow dots in keywords
+  alsodigit={0x}, % hex numbers are numbers too!
+  morekeywords=[1]{ % instructions
+    lb, lh, lw, lbu, lhu,
+    sb, sh, sw,
+    sll, slli, srl, srli, sra, srai,
+    add, addi, sub, lui, auipc,
+    xor, xori, or, ori, and, andi,
+    slt, slti, sltu, sltiu,
+    beq, bne, blt, bge, bltu, bgeu,
+    j, jr, jal, jalr, ret,
+    scall, break, nop
+  },
+  morekeywords=[2]{ % sections of our code and other directives
+    .align, .ascii, .asciiz, .byte, .data, .double, .extern,
+    .float, .globl, .half, .kdata, .ktext, .set, .space, .text, .word
+  },
+  morekeywords=[3]{ % registers
+    zero, ra, sp, gp, tp, s0, fp,
+    t0, t1, t2, t3, t4, t5, t6,
+    s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11,
+    a0, a1, a2, a3, a4, a5, a6, a7,
+    ft0, ft1, ft2, ft3, ft4, ft5, ft6, ft7,
+    fs0, fs1, fs2, fs3, fs4, fs5, fs6, fs7, fs8, fs9, fs10, fs11,
+    fa0, fa1, fa2, fa3, fa4, fa5, fa6, fa7
+  },
+  morecomment=[l]{;},   % mark ; as line comment start
+  morecomment=[l]{\#},  % as well as # (even though it is unconventional)
+  morestring=[b]",      % mark " as string start/end
+  morestring=[b]'       % also mark ' as string start/end
+}
+
+% usage example:
+
+% define some basic colors
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{
+  % listings sonderzeichen (for german weirdness)
+  literate={ö}{{\"o}}1
+           {ä}{{\"a}}1
+           {ü}{{\"u}}1,
+  %basicstyle=\tiny\ttfamily,                    % very small code
+  breaklines=true,                              % break long lines
+  commentstyle=\itshape\color{green!50!black},  % comments are green
+  keywordstyle=[1]\color{blue!80!black},        % instructions are blue
+  keywordstyle=[2]\color{orange!80!black},      % sections/other directives are orange
+  keywordstyle=[3]\color{red!50!black},         % registers are red
+  stringstyle=\color{mauve},                    % strings are from the telekom
+  identifierstyle=\color{teal},                 % user declared addresses are teal
+  frame=l,                                      % black line on the left side of code
+  language=[RISC-V]Assembler,                   % all code is RISC-V
+  tabsize=4,                                    % indent tabs with 4 spaces
+  showstringspaces=false                        % do not replace spaces with weird underlines
+}
