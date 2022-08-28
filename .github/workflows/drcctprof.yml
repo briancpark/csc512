@@ -16,7 +16,7 @@ jobs:
     - name: Install DrCCTProf
       run: |
         git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
-        ./build.sh
+        ./DrCCTProf/build.sh
         export drrun=~/DrCCTProf/build/bin64/drrun
     - name: Run proj0
       run: | 
