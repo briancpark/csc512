@@ -13,10 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Setup env
-      run: source setup-env.sh
     - name: Install DrCCTProf
-      run: git clone --recurse git@github.com:Xuhpclab/DrCCTProf.git
+      run: |
+        git clone --recurse git@github.com:Xuhpclab/DrCCTProf.git
+        ./build.sh
+        export drrun=~/DrCCTProf/build/bin64/drrun
     - name: Run proj0
       run: | 
         cd proj0
