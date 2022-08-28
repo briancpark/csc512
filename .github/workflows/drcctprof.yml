@@ -2,9 +2,9 @@ name: DrCCTProf
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ opened, synchronize, reopened ]
 
 jobs:
   build:
