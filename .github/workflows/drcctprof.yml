@@ -29,3 +29,4 @@ jobs:
         ./build.sh
         cd ../proj0
         ./run.sh
+        git checkout master
