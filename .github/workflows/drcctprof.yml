@@ -24,3 +24,8 @@ jobs:
       run: | 
         cd proj0
         gcc -g p0_test_app.c -o p0_test_app
+        cd ../DrCCTProf/
+        git checkout proj0
+        ./build.sh
+        cd ../proj0
+        ./run.sh
