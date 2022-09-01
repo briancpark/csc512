@@ -7,4 +7,4 @@ else
     ../DrCCTProf/build.sh
 fi
 
-$drrun -t drcctlib_instr_analysis -- ./p0_test_app
+../DrCCTProf/build/bin64/drrun -t drcctlib_instr_analysis -- ./p0_test_app
