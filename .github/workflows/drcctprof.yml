@@ -13,12 +13,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.ACTION_PAT }}
+        submodules: recursive
     - name: Install DrCCTProf
       run: |
-        git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
         ./DrCCTProf/build.sh
         export drrun=~/DrCCTProf/build/bin64/drrun
     - name: Run proj0
       run: | 
         cd proj0
         gcc -g p0_test_app.c -o p0_test_app
+        cd ../DrCCTProf/
+        ./build.sh
+        cd ../proj0
+        ./run.sh
