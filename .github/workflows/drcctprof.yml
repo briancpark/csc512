@@ -25,6 +25,7 @@ jobs:
         cd proj0
         gcc -g p0_test_app.c -o p0_test_app
         cd ../DrCCTProf/
+        rm -rf build
         ./build.sh
         cd ../proj0
         ./run.sh
