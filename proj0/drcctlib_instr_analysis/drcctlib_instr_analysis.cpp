@@ -165,7 +165,7 @@ ClientExit(void)
     uint64_t *hndl_call_num [4] = { load_hndl_call_num, store_hndl_call_num, cond_branch_hndl_call_num, uncond_branch_hndl_call_num };
     uint64_t global_nums[4] = { global_load, global_store, global_cond_branch, global_uncond_branch };
     const char* instr_label[4]
-        = { "MEMORY LOAD", "MEMORY STORE", "CONDITIONAL BRANCH", "UNCONDITIONAL BRANCH" };
+        = { "MEMORY LOAD", "MEMORY STORE", "CONDITIONAL BRANCHES", "UNCONDITIONAL BRANCHES" };
 
     for (int32_t instr_type = 0; instr_type < 4; instr_type++) {
         for (int32_t i = 0; i < TOP_REACH_NUM_SHOW; i++) {
@@ -213,7 +213,7 @@ ClientExit(void)
             drcctlib_print_backtrace_first_item(gTraceFile, output_list[i].handle, true, false);
             dr_fprintf(gTraceFile, "=>EXECUTION TIMES\n%lld\n=>BACKTRACE\n",
                     output_list[i].count);
-            drcctlib_print_backtrace(gTraceFile, output_list[i].handle, true, true, -1);
+            drcctlib_print_backtrace(gTraceFile, output_list[i].handle, false, true, -1);
             dr_fprintf(gTraceFile, "\n\n\n");
 	    }
     }    
