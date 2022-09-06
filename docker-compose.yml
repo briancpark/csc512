@@ -1,0 +1,9 @@
+version: '3'
+services:
+    csc512arm:
+        platform: "linux/arm64"
+        network_mode: host
+        privileged: true
+        build: .
+        volumes:
+        - .:/csc512_fall2022
