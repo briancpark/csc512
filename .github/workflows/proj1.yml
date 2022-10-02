@@ -1,4 +1,4 @@
-name: DrCCTProf
+name: Project 1
 
 on:
   pull_request:
@@ -20,3 +20,9 @@ jobs:
       run: |
         cd proj1
         ./run.sh
+        
+    - name: Run black
+      run: |
+        pip3 install black
+        cd proj1
+        black --check .
