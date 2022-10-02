@@ -86,6 +86,7 @@ class WhileStatement(Statement):
     def __str__(self):
         return "while " + str(self.expression) + "\n" + str(self.block) + "\nendwhile"
 
+
 class Block(Statement):
     def __init__(self, old, new):
         self.old = old
