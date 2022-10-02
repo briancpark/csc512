@@ -27,12 +27,35 @@
 % Question 1
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{1}
-The following grammar is not suitable for a top-down predictive parser. Identify the problem and correct it by rewriting the grammar. Show that your new grammar satisfies the ll(1) condition.
+The following grammar is not suitable for a top-down predictive parser. Identify the problem and correct it by rewriting the grammar. Show that your new grammar satisfies the $LL(1)$ condition.
 
-$$L$$
+$$L \rightarrow Ra | Qba$$
+$$R \rightarrow aba | caba | Rbc$$
+$$Q \rightarrow bbc | bc$$
 
 \begin{Answer}
+There is left recursion in the nonterminal $R$. We can correct it as follows:
 
+$$L \rightarrow Ra | Qba$$
+$$R \rightarrow abaT | cabaT$$
+$$T \rightarrow bcT | \epsilon$$
+$$Q \rightarrow bZ$$
+$$Z \rightarrow bc | c$$
+
+Now the solution has no left recursion. We must also formally prove that the grammar satisfies the $LL(1)$ grammar s.t. $A \rightarrow \alpha$ and $A \rightarrow \beta$ implies $FIRST^+(\alpha) \cap FIRST^+(\beta) = \varnothing$:
+
+For $L, R, T, Q, Z$:
+$$FIRST^+(Ra) \cap FIRST^+(Qba) = \varnothing$$
+$$FIRST^+(abaT) \cap FIRST^+(cabaT) = \varnothing$$
+$$FIRST^+(bcT) \cap FIRST^+(\epsilon) = \varnothing$$
+$$FIRST^+(bZ) = \varnothing$$
+$$FIRST^+(bc) \cap FIRST^+(c) = \varnothing$$
+
+Simplified:
+$$a, c \cap b = \varnothing$$
+$$a \cap c = \varnothing$$
+$$b \cap \epsilon = \varnothing$$
+$$b \cap c = \varnothing$$
 \end{Answer}
 
 \newpage
@@ -42,10 +65,38 @@ $$L$$
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{2}
 Consider the following grammar:
+$$A \rightarrow Ba$$
+$$B \rightarrow dab | Cb$$
+$$C \rightarrow cB$$
+$$C \rightarrow Ac$$
 
 \begin{Parts}
 	\Part Does this grammar has left recursions? If you believe so, try to rewrite the grammar to remove left recursions; the new grammar should describe the same set of expressions as the original grammar does.
-	\Part Is the original grammar a LL(1) grammar? Justify your answer.
+	\begin{Answer}
+		Yes, there is left recursion. From $A \rightarrow Ba, B \rightarrow Cb, C \rightarrow Ac$
+		
+		We can fix this grammar:
+		$$A \rightarrow dabaD | cBbaD$$
+		$$B \rightarrow dab | Cb$$
+		$$C \rightarrow cB | Ac$$
+		$$D \rightarrow cbaD | \epsilon$$
+	\end{Answer}
+	\Part Is the original grammar a $LL(1)$ grammar? Justify your answer.
+	\begin{Answer}
+		The original grammar has a left recursion, thus it doesn't satisfy $LL(1)$. Even after eliminating left recursion in $a$, the grammar still doesn't satisfy $LL(1)$ due to disjoint sets.
+		
+		For $A, B, C, D$:
+		$$FIRST^+(dabaD) \cap FIRST^+(cBbaD) = \varnothing$$
+		$$FIRST^+(dab) \cap FIRST^+(Cb) = \varnothing$$
+		$$FIRST^+(cB) \cap FIRST^+(Ac) = \varnothing$$
+		$$FIRST^+(cbaD) \cap FIRST^+(\epsilon) = \varnothing$$
+
+		Simplified:
+		$$d \cap c = \varnothing$$
+		$$d \cap c, d \neq \varnothing$$
+		$$c \cap c, d \neq \varnothing$$
+		$$c \cap \epsilon = \varnothing$$
+	\end{Answer}
 \end{Parts}
 	
 \newpage
@@ -54,10 +105,18 @@ Consider the following grammar:
 % Question 3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section*{3}
-Write a grammar to describe all binary numbers that are multiples of four. Note:
-0 is a multiple of 4.
+Write a grammar to describe all binary numbers that are multiples of four. \\
+
+\textit{Note: 0 is a multiple of 4.
 The binary number is unsigned (i.e., it contains no sign bit).
-It should not contain leading 0s. For instance 00100 is not legal, but 100 is.
+It should not contain leading 0s. For instance 00100 is not legal, but 100 is.}
+
+\begin{Answer}
+	$$N \rightarrow 0 | 1 M$$
+	$$M \rightarrow 1M | 0M | 00$$
+	
+	Multiples of 4 in binary are represented with trailing two zeros, \verb|00|. The grammar becomes ambiguous, so it will have to look ahead.
+\end{Answer}
 \newpage
 
 
