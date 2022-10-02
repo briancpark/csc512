@@ -1,6 +1,6 @@
 import re, sys, string
 
-debug = True
+debug = False
 dict = {}
 tokens = []
 
@@ -73,6 +73,8 @@ class IfStatement(Statement):
         if self.else_block:
             stmt += "\nelse\n" + str(self.else_block)
 
+        stmt += "\nendif"
+
         return stmt
 
 
@@ -82,8 +84,7 @@ class WhileStatement(Statement):
         self.block = block
 
     def __str__(self):
-        return "while " + str(self.expression) + "\n" + str(self.block)
-
+        return "while " + str(self.expression) + "\n" + str(self.block) + "\nendwhile"
 
 class Block(Statement):
     def __init__(self, old, new):
@@ -91,20 +92,20 @@ class Block(Statement):
         self.new = new
 
     def __str__(self):
-        return "block " + str(self.old) + str(self.new)
+        return str(self.old) + "\n" + str(self.new)
 
 
 class StmtList(Statement):
     def __init__(self, list):
         self.list = list
 
-    def __str__(self):
-        stmts = ""
-
-        for stmt in self.list:
-            stmts += str(stmt) + "\n"
-
-        return stmts
+    # def __str__(self):
+    #     stmts = ""
+    #
+    #     for stmt in self.list:
+    #         stmts += str(stmt) + "\n"
+    #
+    #     return stmts
 
 
 def error(msg):
@@ -252,7 +253,6 @@ def parseWhile():
         print("parseWhile: ", tok)
 
     match("while")
-    tokens.next()
     expr = expression()
     block = parseBlock()
     return WhileStatement(expr, block)

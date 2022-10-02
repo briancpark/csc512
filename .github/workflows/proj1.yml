@@ -1,0 +1,22 @@
+name: DrCCTProf
+
+on:
+  pull_request:
+    branches: [ main, opened, synchronize, reopened ]
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.ACTION_PAT }}
+        submodules: recursive
+    - name: Run proj1
+      run: |
+        cd proj1
+        ./run.sh
