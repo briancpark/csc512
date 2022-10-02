@@ -29,6 +29,84 @@ class Number(Expression):
         return str(self.value)
 
 
+class VarRef(Expression):
+    """ident (VarRef)"""
+
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return str(self.value)
+
+
+class String(Expression):
+    def __init__(self, value):
+        self.value = value
+
+    def __str__(self):
+        return str(self.value)
+
+
+class Statement(object):
+    def __str__(self):
+        return ""
+
+
+class Assignment(Statement):
+    def __init__(self, var_ref, expr):
+        self.var_ref = var_ref
+        self.expr = expr
+
+    def __str__(self):
+        return "= " + str(self.var_ref) + " " + str(self.expr)
+
+
+class IfStatement(Statement):
+    def __init__(self, expression, if_block, else_block):
+        self.expression = expression
+        self.if_block = if_block
+        self.else_block = else_block
+
+    def __str__(self):
+        stmt = "if " + str(self.expression) + "\n" + str(self.if_block)
+
+        if self.else_block:
+            stmt += "\nelse\n" + str(self.else_block)
+
+        return stmt
+
+
+class WhileStatement(Statement):
+    def __init__(self, expression, block):
+        self.expression = expression
+        self.block = block
+
+    def __str__(self):
+        return "while " + str(self.expression) + "\n" + str(self.block)
+
+
+class Block(Statement):
+    def __init__(self, old, new):
+        self.old = old
+        self.new = new
+
+    def __str__(self):
+        return "block " + str(self.old) + str(self.new)
+
+
+class StmtList(Statement):
+    def __init__(self, list):
+        self.list = list
+
+    def __str__(self):
+        stmts = ""
+
+        for stmt in self.list:
+            stmts += str(stmt) + "\n"
+
+        return stmts
+
+
 def error(msg):
     # print msg
     sys.exit(msg)
@@ -47,13 +125,21 @@ def match(matchtok):
 
 
 def factor():
-    """factor     = number |  '(' expression ')'"""
+    """factor     = number | string | ident |  "(" expression ")" """
 
     tok = tokens.peek()
     if debug:
         print("Factor: ", tok)
     if re.match(Lexer.number, tok):
         expr = Number(tok)
+        tokens.next()
+        return expr
+    if re.match(Lexer.string, tok):
+        expr = String(tok)
+        tokens.next()
+        return expr
+    if re.match(Lexer.identifier, tok):
+        expr = VarRef(tok)
         tokens.next()
         return expr
     if tok == "(":
@@ -98,24 +184,147 @@ def addExpr():
     return left
 
 
+def relationalExpr():
+    """relationalExpr = addExpr [ relation addExpr ]"""
+    tok = tokens.peek()
+    if debug:
+        print("relationalExpr: ", tok)
+    left = addExpr()
+
+    tok = tokens.peek()
+
+    if re.match(Lexer.relational, tok):
+        tokens.next()
+        right = addExpr()
+        left = BinaryExpr(tok, left, right)
+    return left
+
+
+def andExpr():
+    """andExpr    = relationalExpr { "and" relationalExpr }"""
+    tok = tokens.peek()
+    if debug:
+        print("andExpr: ", tok)
+
+    left = relationalExpr()
+    tok = tokens.peek()
+
+    if re.match(Lexer.relational, tok):
+        tokens.next()
+        right = addExpr()
+        left = BinaryExpr(tok, left, right)
+    return left
+
+
+def expression():
+    """expression = andExpr { "or" andExpr }"""
+    tok = tokens.peek()
+    if debug:
+        print("expression: ", tok)
+
+    left = andExpr()
+    while tok == "or":
+        tok = tokens.next()
+        right = andExpr()
+        left = BinaryExpr(tok, left, right)
+        tok = tokens.peek()
+    return left
+
+
+def parseAssign():
+    """assign = ident "=" expression  eoln"""
+    tok = tokens.peek()
+    if debug:
+        print("parseAssign: ", tok)
+    if re.match(Lexer.identifier, tok):
+        variable_reference = VarRef(tok)
+    tokens.next()
+    match("=")
+    expr = expression()
+    match(";")
+    return Assignment(variable_reference, expr)
+
+
+def parseWhile():
+    """whileStatement = "while"  expression  block"""
+    tok = tokens.peek()
+    if debug:
+        print("parseWhile: ", tok)
+
+    match("while")
+    tokens.next()
+    expr = expression()
+    block = parseBlock()
+    return WhileStatement(expr, block)
+
+
+def parseIf():
+    """ifStatement = "if" expression block   [ "else" block ]"""
+    tok = tokens.peek()
+    if debug:
+        print("parseIf: ", tok)
+    match("if")
+    expr = expression()
+    if_block = parseBlock()
+    tok = tokens.peek()
+    if tok == "else":
+        match("else")
+        else_block = parseBlock()
+    else:
+        else_block = None
+    return IfStatement(expr, if_block, else_block)
+
+
+def parseBlock():
+    """block = ":" eoln indent stmtList undent"""
+    tok = tokens.peek()
+    if debug:
+        print("parseBlock: ", tok)
+
+    match(":")
+    match(";")
+    match("@")
+    block = parseStmt()
+    while tokens.peek() != "~":
+        prev_block = block
+        block = Block(prev_block, parseStmt())
+    match("~")
+    return block
+
+
+def parseStmt():
+    """statement = ifStatement |  whileStatement  |  assign"""
+    tok = tokens.peek()
+
+    if debug:
+        print("parseStmt: ", tok)
+
+    if tok == "if":
+        return parseIf()
+    elif tok == "while":
+        return parseWhile()
+    else:
+        return parseAssign()
+
+
 def parseStmtList():
     """gee = { Statement }"""
     tok = tokens.peek()
+    stmtList = []
     while tok is not None:
         # need to store each statement in a list
-        ast = parseStmt(tokens)
+        ast = parseStmt()
+        stmtList.append(ast)
         print(str(ast))
-    return ast
+        tok = tokens.peek()
+    return StmtList(stmtList)
 
 
 def parse(text):
     global tokens
     tokens = Lexer(text)
-    expr = addExpr()
-    print(str(expr))
-    #     Or:
-    # stmtlist = parseStmtList( tokens )
-    # print str(stmtlist)
+    stmtlist = parseStmtList()
+    print(str(stmtlist))
     return
 
 
@@ -206,6 +415,7 @@ def delComment(line):
 
 
 def mklines(filename):
+    """Takes a file and converts it to the lexer conventions"""
     inn = open(filename, "r")
     lines = []
     pos = [0]
