@@ -30,8 +30,6 @@ class Number(Expression):
 
 
 class VarRef(Expression):
-    """ident (VarRef)"""
-
     def __init__(self, value):
         self.value = value
 
@@ -84,7 +82,7 @@ class WhileStatement(Statement):
         self.block = block
 
     def __str__(self):
-        return "while " + str(self.expression) + "\n" + str(self.block) + "\nendwhile"
+        return "while " + str(self.expression) + "\n" + str(self.block) + "endwhile"
 
 
 class Block(Statement):
@@ -93,20 +91,12 @@ class Block(Statement):
         self.new = new
 
     def __str__(self):
-        return str(self.old) + "\n" + str(self.new)
+        return str(self.old) + "\n" + str(self.new) + "\n"
 
 
 class StmtList(Statement):
     def __init__(self, list):
         self.list = list
-
-    # def __str__(self):
-    #     stmts = ""
-    #
-    #     for stmt in self.list:
-    #         stmts += str(stmt) + "\n"
-    #
-    #     return stmts
 
 
 def error(msg):
@@ -146,7 +136,7 @@ def factor():
         return expr
     if tok == "(":
         tokens.next()  # or match( tok )
-        expr = addExpr()
+        expr = expression()
         tokens.peek()
         tok = match(")")
         return expr
@@ -225,8 +215,9 @@ def expression():
         print("expression: ", tok)
 
     left = andExpr()
+    tok = tokens.peek()
     while tok == "or":
-        tok = tokens.next()
+        tokens.next()
         right = andExpr()
         left = BinaryExpr(tok, left, right)
         tok = tokens.peek()
