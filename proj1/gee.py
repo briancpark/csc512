@@ -185,10 +185,11 @@ def relationalExpr():
 
     tok = tokens.peek()
 
-    if re.match(Lexer.relational, tok):
+    while re.match(Lexer.relational, tok):
         tokens.next()
         right = addExpr()
         left = BinaryExpr(tok, left, right)
+        tok = tokens.peek()
     return left
 
 
@@ -200,11 +201,11 @@ def andExpr():
 
     left = relationalExpr()
     tok = tokens.peek()
-
-    if re.match(Lexer.relational, tok):
+    while tok == "and":
         tokens.next()
-        right = addExpr()
+        right = relationalExpr()
         left = BinaryExpr(tok, left, right)
+        tok = tokens.peek()
     return left
 
 
