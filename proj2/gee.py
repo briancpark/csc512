@@ -20,29 +20,59 @@ class BinaryExpr(Expression):
     def __str__(self):
         return str(self.op) + " " + str(self.left) + " " + str(self.right)
 
+    def value(self, state):
+        left = self.left.value(state)
+        right = self.right.value(state)
+
+        fn_table = {
+            "+": lambda x, y: x + y,
+            "-": lambda x, y: x - y,
+            "*": lambda x, y: x * y,
+            "/": lambda x, y: x / y,
+            "==": lambda x, y: x == y,
+            "!=": lambda x, y: x != y,
+            ">": lambda x, y: x > y,
+            ">=": lambda x, y: x >= y,
+            "<": lambda x, y: x < y,
+            "<=": lambda x, y: x <= y,
+            "and": lambda x, y: x and y,
+            "or": lambda x, y: x or y,
+        }
+
+        return fn_table[self.op](left, right)
+
 
 class Number(Expression):
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, val):
+        self.val = val
 
     def __str__(self):
-        return str(self.value)
+        return str(self.val)
+
+    def value(self, state):
+        return int(self.val)
 
 
 class VarRef(Expression):
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, val):
+        self.val = val
 
     def __str__(self):
-        return str(self.value)
+        return str(self.val)
+
+    def value(self, state):
+        return state[self.val]
 
 
 class String(Expression):
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, val):
+        self.value = val
 
     def __str__(self):
-        return str(self.value)
+        return str(self.val)
+
+    def value(self, state):
+        return self.val
 
 
 class Statement(object):
@@ -57,6 +87,10 @@ class Assignment(Statement):
 
     def __str__(self):
         return "= " + str(self.var_ref) + " " + str(self.expr)
+
+    def meaning(self, state):
+        state[self.var_ref.val] = self.expr.value(state)
+        return state
 
 
 class IfStatement(Statement):
@@ -75,6 +109,12 @@ class IfStatement(Statement):
 
         return stmt
 
+    def meaning(self, state):
+        if self.expression.value(state):
+            self.if_block.meaning(state)
+        else:
+            self.else_block.meaning(state)
+
 
 class WhileStatement(Statement):
     def __init__(self, expression, block):
@@ -83,6 +123,11 @@ class WhileStatement(Statement):
 
     def __str__(self):
         return "while " + str(self.expression) + "\n" + str(self.block) + "endwhile"
+
+    def meaning(self, state):
+        while self.expression.value(state):
+            self.block.meaning(state)
+        return state
 
 
 class Block(Statement):
@@ -93,10 +138,18 @@ class Block(Statement):
     def __str__(self):
         return str(self.old) + "\n" + str(self.new) + "\n"
 
+    def meaning(self, state):
+        return self.new.meaning(self.old.meaning(state))
+
 
 class StmtList(Statement):
     def __init__(self, list):
         self.list = list
+
+    def meaning(self, state):
+        for stmt in self.list:
+            stmt.meaning(state)
+        return state
 
 
 def error(msg):
@@ -308,7 +361,7 @@ def parseStmtList():
         # need to store each statement in a list
         ast = parseStmt()
         stmtList.append(ast)
-        print(str(ast))
+        # print(str(ast))
         tok = tokens.peek()
     return StmtList(stmtList)
 
@@ -318,7 +371,24 @@ def parse(text):
     tokens = Lexer(text)
     stmtlist = parseStmtList()
     print(str(stmtlist))
+    semantics(stmtlist)
     return
+
+
+def print_state(state):
+    out = "{"
+
+    for key, value in state.items():
+        out += "<" + str(key) + ", " + str(value) + ">" + ", "
+    out = out[:-2]
+    out += "}"
+    print(out)
+
+
+def semantics(stmtlist):
+    state = {}
+    state = stmtlist.meaning(state)
+    print_state(state)
 
 
 # Lexer, a private class that represents lists of tokens from a Gee
