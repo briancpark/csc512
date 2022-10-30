@@ -41,6 +41,32 @@ class BinaryExpr(Expression):
 
         return fn_table[self.op](left, right)
 
+    def typing(self, tm):
+        left = self.left.typing(tm)
+        right = self.right.typing(tm)
+
+        if left == right:
+            if (
+                self.op in ["+", "-", "*", "/"]
+                and left == "number"
+                and right == "number"
+            ):
+                return "number"
+            if (
+                self.op in ["==", "!=", ">", ">=", "<", "<="]
+                and left == "number"
+                and right == "number"
+            ):
+                return "boolean"
+
+        error(
+            "Type Error: Operations between type "
+            + left
+            + " and "
+            + right
+            + " not allowed!"
+        )
+
 
 class Number(Expression):
     def __init__(self, val):
@@ -51,6 +77,9 @@ class Number(Expression):
 
     def value(self, state):
         return int(self.val)
+
+    def typing(self, tm):
+        return "number"
 
 
 class VarRef(Expression):
@@ -63,6 +92,12 @@ class VarRef(Expression):
     def value(self, state):
         return state[self.val]
 
+    def typing(self, tm):
+        if self.val in tm:
+            return tm[str(self.val)]
+        else:
+            error(f"Type Error: " + self.val + " is referenced before being defined!")
+
 
 class String(Expression):
     def __init__(self, val):
@@ -73,6 +108,9 @@ class String(Expression):
 
     def value(self, state):
         return self.val
+
+    def typing(self, tm):
+        return "str"
 
 
 class Statement(object):
@@ -91,6 +129,19 @@ class Assignment(Statement):
     def meaning(self, state):
         state[self.var_ref.val] = self.expr.value(state)
         return state
+
+    def tipe(self, tm):
+        if self.var_ref.val not in tm:
+            tm[str(self.var_ref)] = self.expr.typing(tm)
+            print(self.var_ref, tm[str(self.var_ref)])
+        elif tm[str(self.var_ref)] != self.expr.typing(tm):
+            error(
+                "Type Error: "
+                + tm[str(self.var_ref)]
+                + " = "
+                + self.expr.typing(tm)
+                + "!"
+            )
 
 
 class IfStatement(Statement):
@@ -115,6 +166,14 @@ class IfStatement(Statement):
         else:
             self.else_block.meaning(state)
 
+    def tipe(self, tm):
+        if self.expression.typing(tm) == "boolean":
+            self.if_block.tipe(tm)
+            if self.else_block:
+                self.else_block.tipe(tm)
+        else:
+            error("Type Error: If statement condition must be boolean!")
+
 
 class WhileStatement(Statement):
     def __init__(self, expression, block):
@@ -129,6 +188,12 @@ class WhileStatement(Statement):
             self.block.meaning(state)
         return state
 
+    def tipe(self, tm):
+        if self.expression.typing(tm) == "boolean":
+            self.block.tipe(tm)
+        else:
+            error("Type Error: While statement condition must be boolean!")
+
 
 class Block(Statement):
     def __init__(self, old, new):
@@ -141,6 +206,10 @@ class Block(Statement):
     def meaning(self, state):
         return self.new.meaning(self.old.meaning(state))
 
+    def tipe(self, tm):
+        self.old.tipe(tm)
+        self.new.tipe(tm)
+
 
 class StmtList(Statement):
     def __init__(self, list):
@@ -150,6 +219,11 @@ class StmtList(Statement):
         for stmt in self.list:
             stmt.meaning(state)
         return state
+
+    def tipe(self, tm):
+        for stmt in self.list:
+            stmt.tipe(tm)
+        return tm
 
 
 def error(msg):
@@ -371,7 +445,8 @@ def parse(text):
     tokens = Lexer(text)
     stmtlist = parseStmtList()
     print(str(stmtlist))
-    semantics(stmtlist)
+    # semantics(stmtlist)
+    types(stmtlist)
     return
 
 
@@ -389,6 +464,11 @@ def semantics(stmtlist):
     state = {}
     state = stmtlist.meaning(state)
     print_state(state)
+
+
+def types(stmtlist):
+    tm = {}
+    tm = stmtlist.tipe(tm)
 
 
 # Lexer, a private class that represents lists of tokens from a Gee
