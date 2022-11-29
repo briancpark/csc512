@@ -1,0 +1,30 @@
+name: Project 3
+
+on:
+  pull_request:
+    branches: [ main, opened, synchronize, reopened ]
+  push:
+    branches: [ main ]
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        token: ${{ secrets.ACTION_PAT }}
+        submodules: recursive
+    - name: Build DrCCTProf
+      run: |
+        cd proj3
+        ./run.sh
+    # - name: Run proj0
+    #   run: | 
+    #     cd proj0
+    #     gcc -g p0_test_app.c -o p0_test_app
+    #     cd ../DrCCTProf/
+    #     ./build.sh
+    #     cd ../proj0
+    #     ./run.sh
