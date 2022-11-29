@@ -19,6 +19,7 @@ jobs:
     - name: Build DrCCTProf
       run: |
         cd proj3
+        ./build.sh 
         ./run.sh
     # - name: Run proj0
     #   run: | 
