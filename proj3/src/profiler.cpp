@@ -40,7 +40,19 @@ GetOpndIntValue(Operand opnd)
 static inline bool
 IntegerOverflow(Instruction *instr, uint64_t flagsValue)
 {
-    return false;
+    Operand srcOpnd0 = instr->getSrcOperand(0);
+    Operand srcOpnd1 = instr->getSrcOperand(1);
+    Operand dstOpnd = instr->getDstOperand(0);
+    std::bitset<64> bitFlagsValue(flagsValue);
+    OperatorType optype = instr->getOperatorType();
+
+    if (optype == OperatorType::kOPadd || 
+        optype == OperatorType::kOPsub || 
+        optype == OperatorType::kOPshl) {
+        return (flagsValue & EFLAGS_READ_OF) == 0;
+    } else {
+        return false;
+    }
 }
 
 void
@@ -57,6 +69,10 @@ OnAfterInsExec(Instruction *instr, context_handle_t contxt, uint64_t flagsValue,
         Operand dstOpnd = instr->getDstOperand(0);
         std::bitset<64> bitFlagsValue(flagsValue);
 
+        if (IntegerOverflow(instr, flagsValue)) {
+            ctxtContainer->addCtxt(contxt);
+        }
+
         cout << "ip(" << hex << instr->ip << "):"
              << "add " << dec << GetOpndIntValue(srcOpnd0) << " "
              << GetOpndIntValue(srcOpnd1) << " -> " << GetOpndIntValue(dstOpnd) << " "
@@ -70,6 +86,10 @@ OnAfterInsExec(Instruction *instr, context_handle_t contxt, uint64_t flagsValue,
         
         std::bitset<64> bitFlagsValue(flagsValue);
 
+        if (IntegerOverflow(instr, flagsValue)) {
+            ctxtContainer->addCtxt(contxt);
+        }
+
         cout << "ip(" << hex << instr->ip << "):"
              << "sub " << dec << GetOpndIntValue(srcOpnd0) << " "
              << GetOpndIntValue(srcOpnd1) << " -> " << GetOpndIntValue(dstOpnd) << " "
@@ -81,6 +101,10 @@ OnAfterInsExec(Instruction *instr, context_handle_t contxt, uint64_t flagsValue,
         Operand srcOpnd1 = instr->getSrcOperand(1);
         Operand dstOpnd = instr->getDstOperand(0);
         std::bitset<64> bitFlagsValue(flagsValue);
+
+        if (IntegerOverflow(instr, flagsValue)) {
+            ctxtContainer->addCtxt(contxt);
+        }
 
         cout << "ip(" << hex << instr->ip << "):"
              << "shl " << dec << GetOpndIntValue(srcOpnd0) << " "
