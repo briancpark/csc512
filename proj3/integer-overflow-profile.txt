@@ -1,215 +1,13 @@
 INTEGER OVERFLOW
-0x0000000000400bc1 "sub    rbp, r12"
-=>BACKTRACE
-#0   0x0000000000400bc1 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bc1 "sub    rbp, r12"
-=>BACKTRACE
-#0   0x0000000000400bc1 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bca "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400bca in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bca "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400bca in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004004d8 "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004004d8 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x0000000000400bce in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004004d8 "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004004d8 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x0000000000400bce in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004004ed "add    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004004ed in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x0000000000400bce in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004004ed "add    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004004ed in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x0000000000400bce in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004005b6 "sub    rsi, 0x00602048"
-=>BACKTRACE
-#0   0x00000000004005b6 in register_tm_clones at [:0]
-#1   0x0000000000400be9 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004005b6 "sub    rsi, 0x00602048"
-=>BACKTRACE
-#0   0x00000000004005b6 in register_tm_clones at [:0]
-#1   0x0000000000400be9 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004005cb "add    rsi, rax"
-=>BACKTRACE
-#0   0x00000000004005cb in register_tm_clones at [:0]
-#1   0x0000000000400be9 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004005cb "add    rsi, rax"
-=>BACKTRACE
-#0   0x00000000004005cb in register_tm_clones at [:0]
-#1   0x0000000000400be9 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#2   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bed "add    rbx, 0x01"
-=>BACKTRACE
-#0   0x0000000000400bed in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bed "add    rbx, 0x01"
-=>BACKTRACE
-#0   0x0000000000400bed in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bf6 "add    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400bf6 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400bf6 "add    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400bf6 in __libc_csu_init at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:165]
-#1   0x00007fcb074eb4e3 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#4   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004006b3 "sub    rsp, 0x10"
-=>BACKTRACE
-#0   0x00000000004006b3 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:38]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004006b3 "sub    rsp, 0x10"
-=>BACKTRACE
-#0   0x00000000004006b3 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:38]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
 0x00000000004006a1 "shl    bl, cl"
 =>BACKTRACE
 #0   0x00000000004006a1 in sig_shift_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:30]
-#1   0x00000000004006c9 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:41]
+#1   0x00000000004006db in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:42]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004006a1 "shl    bl, cl"
-=>BACKTRACE
-#0   0x00000000004006a1 in sig_shift_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:30]
-#1   0x00000000004006c9 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:41]
-#2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -218,44 +16,10 @@ INTEGER OVERFLOW
 #0   0x00000000004006a1 in sig_shift_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:30]
 #1   0x00000000004006db in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:42]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004006a1 "shl    bl, cl"
-=>BACKTRACE
-#0   0x00000000004006a1 in sig_shift_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:30]
-#1   0x00000000004006db in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:42]
-#2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004006f0 "add    eax, 0x01"
-=>BACKTRACE
-#0   0x00000000004006f0 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:44]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004006f0 "add    eax, 0x01"
-=>BACKTRACE
-#0   0x00000000004006f0 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:44]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -264,10 +28,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400647 in sig_add_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:8]
 #1   0x0000000000400702 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:45]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -276,10 +40,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400647 in sig_add_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:8]
 #1   0x0000000000400702 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:45]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -288,10 +52,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400647 in sig_add_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:8]
 #1   0x0000000000400720 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:46]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -300,10 +64,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400647 in sig_add_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:8]
 #1   0x0000000000400720 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:46]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -312,10 +76,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400673 in sig_sub_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:19]
 #1   0x0000000000400734 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:47]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -324,100 +88,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400673 in sig_sub_8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:19]
 #1   0x0000000000400734 in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:47]
 #2   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040075f "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x000000000040075f in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:48]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040075f "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x000000000040075f in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:48]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040077b "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x000000000040077b in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:48]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040077b "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x000000000040077b in case8 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:48]
-#1   0x0000000000400b34 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:156]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040081d "sub    rsp, 0x10"
-=>BACKTRACE
-#0   0x000000000040081d in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:84]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040081d "sub    rsp, 0x10"
-=>BACKTRACE
-#0   0x000000000040081d in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:84]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400809 "shl    bx, cl"
-=>BACKTRACE
-#0   0x0000000000400809 in sig_shift_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:76]
-#1   0x0000000000400837 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:87]
-#2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400809 "shl    bx, cl"
-=>BACKTRACE
-#0   0x0000000000400809 in sig_shift_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:76]
-#1   0x0000000000400837 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:87]
-#2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -426,10 +100,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400809 in sig_shift_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:76]
 #1   0x000000000040084a in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:88]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -438,32 +112,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400809 in sig_shift_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:76]
 #1   0x000000000040084a in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:88]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400861 "add    eax, 0x01"
-=>BACKTRACE
-#0   0x0000000000400861 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:90]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400861 "add    eax, 0x01"
-=>BACKTRACE
-#0   0x0000000000400861 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:90]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -472,10 +124,10 @@ INTEGER OVERFLOW
 #0   0x00000000004007a5 in sig_add_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:54]
 #1   0x0000000000400874 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:91]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -484,10 +136,10 @@ INTEGER OVERFLOW
 #0   0x00000000004007a5 in sig_add_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:54]
 #1   0x0000000000400874 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:91]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -496,10 +148,10 @@ INTEGER OVERFLOW
 #0   0x00000000004007a5 in sig_add_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:54]
 #1   0x0000000000400891 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:92]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -508,10 +160,10 @@ INTEGER OVERFLOW
 #0   0x00000000004007a5 in sig_add_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:54]
 #1   0x0000000000400891 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:92]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -520,10 +172,10 @@ INTEGER OVERFLOW
 #0   0x00000000004007d6 in sig_sub_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:65]
 #1   0x00000000004008a6 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:93]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -532,100 +184,10 @@ INTEGER OVERFLOW
 #0   0x00000000004007d6 in sig_sub_16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:65]
 #1   0x00000000004008a6 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:93]
 #2   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004008d2 "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004008d2 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:94]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004008d2 "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004008d2 in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:94]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004008ee "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x00000000004008ee in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:94]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004008ee "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x00000000004008ee in case16 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:94]
-#1   0x0000000000400b4d in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:158]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400937 "sub    rsp, 0x20"
-=>BACKTRACE
-#0   0x0000000000400937 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:113]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400937 "sub    rsp, 0x20"
-=>BACKTRACE
-#0   0x0000000000400937 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:113]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040092d "shl    edx, cl"
-=>BACKTRACE
-#0   0x000000000040092d in sig_shift_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:110]
-#1   0x0000000000400953 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:116]
-#2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x000000000040092d "shl    edx, cl"
-=>BACKTRACE
-#0   0x000000000040092d in sig_shift_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:110]
-#1   0x0000000000400953 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:116]
-#2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -634,10 +196,10 @@ INTEGER OVERFLOW
 #0   0x000000000040092d in sig_shift_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:110]
 #1   0x0000000000400965 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:117]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -646,32 +208,10 @@ INTEGER OVERFLOW
 #0   0x000000000040092d in sig_shift_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:110]
 #1   0x0000000000400965 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:117]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400978 "add    eax, 0x01"
-=>BACKTRACE
-#0   0x0000000000400978 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:119]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400978 "add    eax, 0x01"
-=>BACKTRACE
-#0   0x0000000000400978 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:119]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -680,10 +220,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400905 in sig_add_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:100]
 #1   0x0000000000400988 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:120]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -692,10 +232,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400905 in sig_add_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:100]
 #1   0x0000000000400988 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:120]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -704,10 +244,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400905 in sig_add_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:100]
 #1   0x00000000004009a0 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:121]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -716,10 +256,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400905 in sig_add_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:100]
 #1   0x00000000004009a0 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:121]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -728,10 +268,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400916 in sig_sub_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:105]
 #1   0x00000000004009b2 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:122]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -740,100 +280,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400916 in sig_sub_32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:105]
 #1   0x00000000004009b2 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:122]
 #2   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004009ca "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004009ca in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:123]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004009ca "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x00000000004009ca in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:123]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004009f1 "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x00000000004009f1 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:123]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x00000000004009f1 "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x00000000004009f1 in case32 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:123]
-#1   0x0000000000400b66 in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:160]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400a48 "sub    rsp, 0x40"
-=>BACKTRACE
-#0   0x0000000000400a48 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:141]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400a48 "sub    rsp, 0x40"
-=>BACKTRACE
-#0   0x0000000000400a48 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:141]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400a3f "shl    rax, cl"
-=>BACKTRACE
-#0   0x0000000000400a3f in sig_shift_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:138]
-#1   0x0000000000400a6a in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:144]
-#2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400a3f "shl    rax, cl"
-=>BACKTRACE
-#0   0x0000000000400a3f in sig_shift_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:138]
-#1   0x0000000000400a6a in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:144]
-#2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -842,10 +292,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a3f in sig_shift_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:138]
 #1   0x0000000000400a7d in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:145]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -854,32 +304,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a3f in sig_shift_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:138]
 #1   0x0000000000400a7d in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:145]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400a95 "add    rax, 0x01"
-=>BACKTRACE
-#0   0x0000000000400a95 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:147]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400a95 "add    rax, 0x01"
-=>BACKTRACE
-#0   0x0000000000400a95 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:147]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -888,10 +316,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a0c in sig_add_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:128]
 #1   0x0000000000400aab in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:148]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -900,10 +328,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a0c in sig_add_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:128]
 #1   0x0000000000400aab in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:148]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -912,10 +340,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a0c in sig_add_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:128]
 #1   0x0000000000400acb in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:149]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -924,10 +352,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a0c in sig_add_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:128]
 #1   0x0000000000400acb in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:149]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -936,10 +364,10 @@ INTEGER OVERFLOW
 #0   0x0000000000400a21 in sig_sub_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:133]
 #1   0x0000000000400ae2 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:150]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
 INTEGER OVERFLOW
@@ -948,105 +376,9 @@ INTEGER OVERFLOW
 #0   0x0000000000400a21 in sig_sub_64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:133]
 #1   0x0000000000400ae2 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:150]
 #2   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#3   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
+#3   0x00007f58e4697553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #4   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
 #5   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#6   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400aff "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400aff in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:151]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400aff "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400aff in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:151]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400b24 "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x0000000000400b24 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:151]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400b24 "add    rsp, 0x20"
-=>BACKTRACE
-#0   0x0000000000400b24 in case64 at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:151]
-#1   0x0000000000400b7f in main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:162]
-#2   0x00007fcb074eb553 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#5   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400c14 "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400c14 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x00007fcd179ce0a6 in _dl_fini at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x00007fcb07502ce7 in __run_exit_handlers at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x00007fcb07502d32 in __GI_exit at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x00007fcb074eb557 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#6   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#7   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400c14 "sub    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400c14 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x00007fcd179ce0a6 in _dl_fini at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x00007fcb07502ce7 in __run_exit_handlers at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x00007fcb07502d32 in __GI_exit at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x00007fcb074eb557 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#6   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#7   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400c18 "add    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400c18 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x00007fcd179ce0a6 in _dl_fini at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x00007fcb07502ce7 in __run_exit_handlers at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x00007fcb07502d32 in __GI_exit at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x00007fcb074eb557 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#6   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#7   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
-
-
-INTEGER OVERFLOW
-0x0000000000400c18 "add    rsp, 0x08"
-=>BACKTRACE
-#0   0x0000000000400c18 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#1   0x00007fcd179ce0a6 in _dl_fini at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#2   0x00007fcb07502ce7 in __run_exit_handlers at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#3   0x00007fcb07502d32 in __GI_exit at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#4   0x00007fcb074eb557 in __libc_start_main at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#5   0x0000000000400574 in <MISSING> at [/afs/unity.ncsu.edu/users/b/bcpark/csc512/proj3/test_apps/src/test1.c:0]
-#6   0xffffffffffffffff in THREAD[0]_ROOT_CTXT at [<NULL>:0]
-#7   0x0000000000000000 in PROCESS[1129]_ROOT_CTXT at [<NULL>:0]
+#6   0x0000000000000000 in PROCESS[95371]_ROOT_CTXT at [<NULL>:0]
 
 
