@@ -33,9 +33,9 @@ TEST_APPS_ROOT=$CUR_DIR/../test_apps
 TEST_APP1_FULL_PATH=$TEST_APPS_ROOT/build/test1
 $TEST_APPS_ROOT/build.sh
 
-DRRUN=$CUR_DIR/../DrCCTProf/build/bin64/drrun
+DRRUN=$CUR_DIR/../../DrCCTProf/build/bin64/drrun
 if [ "$DEBUG_MODE" == "true" ]; then
-    DRRUN=$CUR_DIR/../DrCCTProf/build_debug/bin64/drrun
+    DRRUN=$CUR_DIR..//../DrCCTProf/build_debug/bin64/drrun
 fi
 
 DEBUG_FLAG=
