@@ -2,6 +2,7 @@
 Brian Park
 
 1. Here is the visualization 
+
 ![](drctprof_example.png)
 
 2. I used the overflow bit solution with the help from DynamoRIO flag (`EFLAGS_READ_OF`) listed [here](https://dynamorio.org/globals_e.html). That was the easiest solution, and it can detect nearly the same outputs, with just fewer lines of code! I prefer this solution better as it is neater and abstracts all teh details away.
