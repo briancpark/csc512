@@ -16,6 +16,10 @@ jobs:
       with:
         token: ${{ secrets.ACTION_PAT }}
         submodules: recursive
+    - name: Install DrCCTProf
+      run: |
+        ./DrCCTProf/build.sh
+        export drrun=~/DrCCTProf/build/bin64/drrun
     - name: Run Project 3
       run: |
         cd proj3
