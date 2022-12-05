@@ -18,6 +18,6 @@ echo -e "clean env config..."
 $CUR_DIR/scripts/env_clean.sh
 
 echo -e "build clean..."
-$CUR_DIR/DrCCTProf/build_clean.sh
+$CUR_DIR/../DrCCTProf/build_clean.sh
 
 

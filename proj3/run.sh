@@ -12,8 +12,8 @@ echo "remake..."
 
 MAKE_STATUS=0
 MAKE_LOG_FILE=$CUR_DIR/logs/remake.log
-$CUR_DIR/DrCCTProf/scripts/build_tool/remake.sh > /dev/null || MAKE_STATUS=-1
-cp $CUR_DIR/DrCCTProf/logs/remake* $MAKE_LOG_FILE
+$CUR_DIR/../DrCCTProf/scripts/build_tool/remake.sh > /dev/null || MAKE_STATUS=-1
+cp $CUR_DIR/../DrCCTProf/logs/remake* $MAKE_LOG_FILE
 if [[ $MAKE_STATUS == 0 ]]; then
     echo -e "\033[32m Remake successfully! \033[0m"
     echo "make test..."
