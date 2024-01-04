@@ -1,10 +1,13 @@
 name: Project 1
 
 on:
-  pull_request:
-    branches: [ main, opened, synchronize, reopened ]
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Schedule to run at 00:00 UTC on the 1st of every month
+    - cron: '0 0 1 * *'
 
 jobs:
   build:
@@ -12,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
         token: ${{ secrets.ACTION_PAT }}
         submodules: recursive
