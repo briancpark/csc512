@@ -16,9 +16,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-        token: ${{ secrets.ACTION_PAT }}
-        submodules: recursive
     - name: Run proj1
       run: |
         cd proj1
