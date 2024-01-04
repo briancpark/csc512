@@ -491,7 +491,6 @@ def types(stmtlist):
 
 
 class Lexer:
-
     # The constructor with some regular expressions that define Gee's lexical rules.
     # The constructor uses these expressions to split the input expression into
     # a list of substrings that match Gee tokens, and saves that list to be
