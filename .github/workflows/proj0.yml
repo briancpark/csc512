@@ -19,13 +19,11 @@ jobs:
     - name: Install DrCCTProf
       run: |
         git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
+        cp -r proj0/drcctlib_instr_analysis/ DrCCTProf/src/clients/drcctlib_instr_analysis
         cd DrCCTProf
         ./build.sh
         export drrun=$PWD/build/bin64/drrun
-    
-    - name: Run proj0
-      run: | 
-        cd proj0
+        cd ../proj0
         gcc -g p0_test_app.c -o p0_test_app
         drrun -t drcctlib_instr_analysis -- ./p0_test_app
     
