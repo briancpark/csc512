@@ -16,5 +16,6 @@ jobs:
     - name: Run Project 3
       run: |
         cd proj3
+        git submodule update --init --recursive
         ./build.sh
         ./run.sh 
