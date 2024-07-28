@@ -1,0 +1,32 @@
+name: Project 0
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Schedule to run at 00:00 UTC on the 1st of every month
+    - cron: '0 0 1 * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install DrCCTProf
+      run: |
+        git clone --recurse https://github.com/Xuhpclab/DrCCTProf.git
+        cd DrCCTProf
+        ./build.sh
+        export drrun=$PWD/build/bin64/drrun
+    
+    - name: Run proj0
+      run: | 
+        cd proj0
+        gcc -g p0_test_app.c -o p0_test_app
+        drrun -t drcctlib_instr_analysis -- ./p0_test_app
+    
+    
