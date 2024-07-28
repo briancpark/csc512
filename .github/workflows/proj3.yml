@@ -1,0 +1,20 @@
+name: Project 3
+
+on:
+  pull_request:
+    branches: [ main, opened, synchronize, reopened ]
+  push:
+    branches: [ main ]
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Project 3
+      run: |
+        cd proj3
+        ./build.sh
+        ./run.sh 
