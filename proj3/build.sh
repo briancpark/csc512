@@ -1,19 +1,41 @@
 #! /bin/bash
 
 # **********************************************************
-# Copyright (c) 2020 Xuhpclab. All rights reserved.
+# Copyright (c) 2020-2021 Xuhpclab. All rights reserved.
 # Licensed under the MIT License.
 # See LICENSE file for more information.
 # **********************************************************
 
+for i in "$@"; do
+  case $i in
+    --build_cpp_version=*)
+      BUILD_CPP_VERSION="${i#*=}"
+      shift # past argument=value
+      ;;
+    --debug=*)
+      DEBUG="${i#*=}"
+      shift # past argument=value
+      ;;
+    -*|--*)
+      echo "Unknown option $i"
+      exit 1
+      ;;
+    *)
+      ;;
+  esac
+done
+
+
 CUR_DIR=$(cd "$(dirname "$0")";pwd)
-rm -rf $CUR_DIR/src/clients/*
-mkdir $CUR_DIR/logs
 
-$CUR_DIR/scripts/env_init.sh
+echo -e "add dynamorio patch..."
+$CUR_DIR/scripts/build_tool/dr_patch_add.sh --build_cpp_version=${BUILD_CPP_VERSION}
 
+echo -e "init env..."
 $CUR_DIR/scripts/build_tool/env_init.sh
 
-$CUR_DIR/scripts/build_tool/make.sh
-cp $CUR_DIR/logs/cmake* $CUR_DIR/logs/cmake.log
-cp $CUR_DIR/logs/make* $CUR_DIR/logs/make.log
+echo -e "make..."
+$CUR_DIR/scripts/build_tool/make.sh --debug=${DEBUG}
+
+echo -e "make test..."
+$CUR_DIR/scripts/build_tool/make_tests.sh --debug=${DEBUG}
