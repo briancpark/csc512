@@ -25,4 +25,5 @@ jobs:
     - name: Build proj3
       run: |
         cd proj3
-        bash run.sh
+        ./build.sh
+        ./run.sh 
