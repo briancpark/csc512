@@ -25,4 +25,5 @@ jobs:
     - name: Build proj0
       run: |
         cd proj0
+        cp -r drcctlib_instr_analysis ../DrCCTProf/src/clients
         bash run.sh
