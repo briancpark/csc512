@@ -1,0 +1,28 @@
+name: Project 0
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Schedule to run at 00:00 UTC on the 1st of every month
+    - cron: '0 0 1 * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout the repository with submodules
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with:
+        submodules: recursive  # Clone submodules recursively
+
+    # Build the project
+    - name: Build proj0
+      run: |
+        cd proj0
+        bash run.sh
