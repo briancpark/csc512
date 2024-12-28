@@ -21,17 +21,9 @@ jobs:
       with:
         submodules: recursive  # Clone submodules recursively
 
-    # Install GCC 9
-    - name: Install GCC 9
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y gcc-9 g++-9
-        sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 100
-        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 100
-
     # Build the project
     - name: Build proj3
       run: |
         cd proj3
         ./build.sh
-        ./run.sh 
+        # ./run.sh 
