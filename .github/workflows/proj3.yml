@@ -25,10 +25,10 @@ jobs:
     - name: Install GCC 7.5
       run: |
         sudo apt-get update
-        sudo apt-get install -y gcc-7 g++-7
-        sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 100
-        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 100
-        
+        sudo apt-get install -y gcc-9 g++-9
+        sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7
+        sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7
+
     # Build the project
     - name: Build proj3
       run: |
