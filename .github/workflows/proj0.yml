@@ -25,5 +25,6 @@ jobs:
     - name: Build proj0
       run: |
         cd proj0
+        gcc -g p0_test_app.c -o p0_test_app
         cp -r drcctlib_instr_analysis ../DrCCTProf/src/clients
         bash run.sh
