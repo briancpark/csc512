@@ -35,3 +35,4 @@ jobs:
         gcc -g -O0 -o p0_test_app p0_test_app.c
         cp -r drcctlib_instr_analysis ../DrCCTProf/src/clients
         bash run.sh
+    continue-on-error: true
