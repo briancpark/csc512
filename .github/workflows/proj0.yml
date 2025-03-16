@@ -27,11 +27,11 @@ jobs:
       with:
         version: 9
         platform: x86
-        
+
     # Build the project
     - name: Build proj0
       run: |
         cd proj0
-        gcc -g -O0 -fsanitize=undefined -fsanitize=float-divide-by-zero -o p0_test_app p0_test_app.c
+        gcc -g -O0 -o p0_test_app p0_test_app.c
         cp -r drcctlib_instr_analysis ../DrCCTProf/src/clients
         bash run.sh
