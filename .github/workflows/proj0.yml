@@ -21,6 +21,13 @@ jobs:
       with:
         submodules: recursive  # Clone submodules recursively
 
+    # Use an older compiler to avoid newer floating point compiler optimizaitons
+    - name: Set up GCC
+      uses: egor-tensin/setup-gcc@v1
+      with:
+        version: 9
+        platform: x86
+        
     # Build the project
     - name: Build proj0
       run: |
